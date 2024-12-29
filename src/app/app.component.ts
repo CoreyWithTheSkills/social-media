@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: []
 })
+
+
 export class AppComponent {
-  title = 'testing';
+
+
+  toggleLightMode(event: Event): void {
+    const isChecked = (event.target as HTMLInputElement).checked;
+    console.log('Checkbox checked:', isChecked); // Debugging log
+    document.body.classList.toggle('light-mode', isChecked); // Add/remove 'light-mode' based on checkbox state
+  }
 }
