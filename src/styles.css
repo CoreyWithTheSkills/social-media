@@ -19,6 +19,8 @@ body.light-mode {
   color: black;
 }
 
+
+
 html{
     font-size: 16px;
 }
@@ -321,5 +323,178 @@ margin-top: 3rem;
     height: 0.75rem;
   }
   
+.h1-middle{
+  margin-top: 2rem;
+}
+
     /* End Of Second Container Styling */
 
+    @media screen and (min-width: 1080px) {
+      .grid, .grid-2 {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
+        grid-template-rows: none; /* Disable rows */
+        gap: 4rem;
+        width: 62.5rem;
+      }
+
+      .grid-container-1,
+  .grid-container-2,
+  .grid-container-3,
+  .grid-container-4,
+  .grid-2-container-1,
+  .grid-2-container-2,
+  .grid-2-container-3,
+  .grid-2-container-4,
+  .grid-2-container-5,
+  .grid-2-container-6,
+  .grid-2-container-7,
+  .grid-2-container-8 {
+    display: flex; /* Make grid items flexible */
+    flex-direction: column; /* Default to column layout for content */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 1rem; /* Add padding inside grid items */
+    box-sizing: border-box; /* Ensure padding doesn't break layout */
+    width: 15.625rem;
+  }
+
+  .grid-flex {
+    flex-direction: column; /* Change specific nested elements to row layout if needed */
+    justify-content: space-between; /* Distribute items across the grid item */
+    align-items: center; /* Align items to the center */
+  }
+
+  body{
+    font-size: 1rem;
+  }
+
+  .biggest-h1{
+    font-size: 3rem;
+  }
+
+  .grid-2-container-1 {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-direction: row; /* Ensure children are in a row */
+    justify-content: space-between; /* Space elements to the edges */
+    align-items: center; /* Center elements vertically */
+    background-color: hsl(228, 28%, 20%);
+    width: 15.625rem;
+    padding: 1.3rem;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+    }
+
+    @media screen and (min-width: 850px) and (max-width: 1080px) {
+      .grid, .grid-2 {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted column width */
+        grid-template-rows: none; /* Disable rows */
+        gap: 2rem; /* Smaller gap for compact design */
+        width: 50rem; /* Adjusted width for smaller screens */
+      }
+    
+      .grid-container-1,
+      .grid-container-2,
+      .grid-container-3,
+      .grid-container-4,
+      .grid-2-container-1,
+      .grid-2-container-2,
+      .grid-2-container-3,
+      .grid-2-container-4,
+      .grid-2-container-5,
+      .grid-2-container-6,
+      .grid-2-container-7,
+      .grid-2-container-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.8rem; /* Reduced padding */
+        box-sizing: border-box;
+        width: 12.5rem; /* Adjusted item width */
+      }
+    
+      .grid-flex {
+        flex-direction: column; /* Keep column layout */
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      body {
+        font-size: 0.9rem; /* Slightly smaller font size */
+      }
+    
+      .biggest-h1 {
+        font-size: 2.5rem; /* Adjusted for smaller screens */
+      }
+    
+      .grid-2-container-1 {
+        display: flex;
+        flex-direction: row; /* Keep children in a row */
+        justify-content: space-between;
+        align-items: center;
+        background-color: hsl(228, 28%, 20%);
+        width: 12.5rem; /* Adjusted container width */
+        padding: 1rem; /* Reduced padding */
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+    }
+    
+
+    @media screen and (min-width: 750px) and (max-width: 850px) {
+      .grid, .grid-2 {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Smaller grid items */
+        grid-template-rows: none; /* Disable rows */
+        gap: 1.5rem; /* Tighter spacing */
+        width: 45rem; /* Reduced overall grid width */
+      }
+    
+      .grid-container-1,
+      .grid-container-2,
+      .grid-container-3,
+      .grid-container-4,
+      .grid-2-container-1,
+      .grid-2-container-2,
+      .grid-2-container-3,
+      .grid-2-container-4,
+      .grid-2-container-5,
+      .grid-2-container-6,
+      .grid-2-container-7,
+      .grid-2-container-8 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0.6rem; /* Reduced padding for compact design */
+        box-sizing: border-box;
+        width: 11.5rem; /* Smaller item width */
+      }
+    
+      .grid-flex {
+        flex-direction: column; /* Column layout for nested elements */
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+      body {
+        font-size: 0.85rem; /* Slightly smaller font size */
+      }
+    
+      .biggest-h1 {
+        font-size: 2rem; /* Adjusted heading size */
+      }
+    
+      .grid-2-container-1 {
+        display: flex;
+        flex-direction: row; /* Ensure horizontal layout for child elements */
+        justify-content: space-between;
+        align-items: center;
+        background-color: hsl(228, 28%, 20%);
+        width: 11.5rem; /* Match grid item width */
+        padding: 0.8rem; /* Compact padding */
+        box-sizing: border-box;
+        cursor: pointer;
+      }
+    }
+    
