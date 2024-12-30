@@ -18,8 +18,11 @@ export class AppComponent {
     const gridContainers = document.querySelectorAll(
       '.grid-container-1, .grid-container-2, .grid-container-3, .grid-container-4, .grid-2-container-1'
     );
-  
     const gridText = document.querySelectorAll('.biggest-h1,.h2,.first-h1');
+    const darkModeContainer = document.querySelectorAll('.dark-mode-container,.top-container');
+    
+  
+    
     // Loop through and apply the background color logic
     gridContainers.forEach((container) => {
       if (isChecked) {
@@ -37,5 +40,15 @@ export class AppComponent {
         (biggestH1 as HTMLElement).style.color = 'white'; // Default dark mode color
       }
     });
+
+    darkModeContainer.forEach((darkContainer) => {
+      if (isChecked) {
+        (darkContainer as HTMLElement).style.backgroundColor = 'white'; // Light mode color
+      } else {
+        (darkContainer as HTMLElement).style.backgroundColor = 'hsl(228, 28%, 20%)'; // Default dark mode color
+      }
+    });
+
+
   }
 }
