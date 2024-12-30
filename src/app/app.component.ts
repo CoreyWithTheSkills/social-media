@@ -49,7 +49,7 @@ export class AppComponent implements OnInit {
     darkModeContainer.forEach((darkContainer) => {
       (darkContainer as HTMLElement).style.backgroundColor = isChecked
         ? 'white' // Light mode background color
-        : 'hsl(228, 28%, 20%)'; // Default dark mode background color
+        : 'hsl(230, 17%, 14%)'; // Default dark mode background color
     });
   }
 }
